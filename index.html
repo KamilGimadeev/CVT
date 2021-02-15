@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="js\browser_detecting.js" charset="utf-8"></script>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script src="js/script.js" charset="utf-8"></script>
+</head>
+<form id="form_id"  onsubmit="javascript:return validate('form_id','email','pass');">
+  <p>
+    <label for="mail">
+      <span>Пожалуйста введите адрес электронной почты и пароль:</span>
+      <input type="text" id="email" name="email" placeholder="Email" />
+      <span class="error" aria-live="polite" float:right></span>
+    </label>
+    <label for="pass">
+      <input type="text" id="pass" name="pass" placeholder="Пароль"/>
+      <br>
+      <span class="error" aria-live="polite"></span>
+    </label>
+  </p>
+  <button>Отправить</button>
+</form>
+<div id="clock">
+  <script src="js/clock.js" charset="utf-8"></script>
+  <script type="text/javascript">
+ clock();
+</script>
+</div>
+</html>
